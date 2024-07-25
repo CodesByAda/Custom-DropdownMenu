@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>State Selector</title>
+</head>
+<body>
+    <div class="btn">
+        <button class="readmore" id="readMore">Read More</button>
+    </div>
+    <div class="dropdown-container hide">
+        <div class="title">
+            <h2>License Menu</h2>
+            <span class="closebtn" id="closeBtn">&Cross;</span>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-button" id="dropdownButton">
+                Select State <span id="dropdownIcon">&#9660;</span>
+            </button>
+            <div class="dropdown-content" id="dropdownContent">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search states...">
+                    <span class="search-icon">&#128269;</span>
+                </div>
+                <div id="errorMessage" class="error-message">No states found</div>
+            </div>
+        </div>
+        <button id="submitButton" class="submit-button" disabled>Submit</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
